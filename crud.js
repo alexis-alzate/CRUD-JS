@@ -43,14 +43,14 @@ function crearPersona() {
     localStorage.setItem("personas", JSON.stringify(personas));
 
     // Mostrar datos y limpiar campos después de crear/actualizar
-    mostrarDatos();Ñ
+   // mostrarDatos();
     limpiar();
 }
 
 
 function mostrarDatos() {
     var personas = localStorage.getItem("personas");
-    var tablaPersonas = document.getElementById("tablaPersonas"); // ¡Corregido el ID para que coincida con el HTML!
+    var tablaPersonas = document.getElementById("tablaPersonas"); 
 
     if (!personas || personas === "null" || personas === "") {
         // ¡Corregido 'colpsan' a 'colspan' y las etiquetas td!
